@@ -1,0 +1,9 @@
+
+{:paths ["source-code/cljs"]
+ :deps  {bithandshake/cljc-fruits         {:git/url "https://github.com/bithandshake/cljc-fruits"
+                                           :sha     "7ba2b1c7fc855bb8910a57cc85db950de68c1d1e"}
+         bithandshake/cljs-dom            {:git/url "https://github.com/bithandshake/cljs-dom"
+                                           :sha     "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"}
+         mt-app-kit/intersection-observer {:git/url "https://github.com/mt-app-kit/intersection-observer"
+                                           :sha     "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+         org.clojure/clojurescript        {:mvn/version "1.10.891"}}}
