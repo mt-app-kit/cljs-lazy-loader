@@ -34,7 +34,7 @@
 (def load-image! side-effects/load-image!)
 
 ; @redirect (lazy-loader.state/*)
-(def LOADERS state/LOADERS)
+(def URIS state/URIS)
 
 ; @redirect (lazy-loader.views/*)
 (def image-sensor views/image-sensor)

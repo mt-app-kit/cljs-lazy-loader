@@ -9,7 +9,7 @@
 
 (defn image-sensor
   ; @description
-  ; Sets up an intersection observer that triggers the 'load-image!' function.
+  ; Sets up an intersection observer that triggers the 'load-image!' function when the sensor intersects the viewport.
   ;
   ; @param (keyword)(opt) loader-id
   ; @param (map) loader-props

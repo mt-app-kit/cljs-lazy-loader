@@ -20,7 +20,7 @@
   ;
   ; @return (boolean)
   [_ {:keys [uri]}]
-  (if uri (get-in @state/LOADERS [uri :load-failed?])))
+  (if uri (get-in @state/URIS [uri :load-failed?])))
 
 (defn image-loaded?
   ; @description
@@ -37,4 +37,4 @@
   ;
   ; @return (boolean)
   [_ {:keys [uri]}]
-  (if uri (get-in @state/LOADERS [uri :loaded?])))
+  (if uri (get-in @state/URIS [uri :loaded?])))

@@ -1,5 +1,6 @@
 
-(ns lazy-loader.state)
+(ns lazy-loader.state
+    (:require [reagent.core :refer [atom] :rename {atom ratom}]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
@@ -13,7 +14,7 @@
 ;    :load-failed? (boolean)}}
 ;
 ; @usage
-; (deref LOADERS)
+; (deref URIS)
 ; =>
 ; {"/my-image.png" {:loaded? true}}
-(def LOADERS (atom {}))
+(def URIS (ratom {}))

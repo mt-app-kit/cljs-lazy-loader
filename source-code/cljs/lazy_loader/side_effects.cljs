@@ -39,7 +39,7 @@
   ; @usage
   ; (image-load-failed :my-loader {...})
   [_ {:keys [on-error-f uri]}]
-  (if uri        (swap! state/LOADERS assoc uri {:load-failed? true}))
+  (if uri        (swap! state/URIS assoc uri {:load-failed? true}))
   (if on-error-f (on-error-f uri)))
 
 (defn image-loaded
@@ -54,7 +54,7 @@
   ; @usage
   ; (image-loaded :my-loader {...})
   [loader-id {:keys [get-element-f on-load-f uri] :as loader-props}]
-  (if uri           (swap! state/LOADERS assoc uri {:loaded? true}))
+  (if uri           (swap! state/URIS assoc uri {:loaded? true}))
   (if on-load-f     (on-load-f uri))
   (if get-element-f (set-loaded-image! loader-id loader-props)))
 
