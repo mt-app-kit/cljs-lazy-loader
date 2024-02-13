@@ -10,13 +10,13 @@
 
 ; @tutorial Demo
 ;
-; @code Image sensor
+; @--- Image sensor
 ; (defn my-image-sensor
 ;   []
 ;   [image-sensor :my-loader {:get-element-f (fn [_] (.getElementById js/document "my-element"))
 ;                             :uri "/my-image.png"}])
 ;
-; @code Image element
+; @--- Image element
 ; (defn my-ui
 ;   []
 ;   [:<> [:div {:id "my-offset" :style {:height :100vh :width :100%}}]
