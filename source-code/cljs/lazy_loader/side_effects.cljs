@@ -1,9 +1,9 @@
 
 (ns lazy-loader.side-effects
-    (:require [lazy-loader.state :as state]
-              [lazy-loader.env :as env]
-              [dom.api :as dom]
-              [fruits.css.api :as css]))
+    (:require [dom.api           :as dom]
+              [fruits.css.api    :as css]
+              [lazy-loader.env   :as env]
+              [lazy-loader.state :as state]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------

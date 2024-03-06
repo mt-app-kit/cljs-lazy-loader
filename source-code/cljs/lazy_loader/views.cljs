@@ -1,8 +1,8 @@
 
 (ns lazy-loader.views
-    (:require [intersection-observer.api :as intersection-observer]
-              [lazy-loader.side-effects :as side-effects]
-              [fruits.random.api :as random]))
+    (:require [fruits.random.api         :as random]
+              [intersection-observer.api :as intersection-observer]
+              [lazy-loader.side-effects  :as side-effects]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
