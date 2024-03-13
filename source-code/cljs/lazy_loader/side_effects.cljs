@@ -21,9 +21,9 @@
   [loader-id {:keys [get-element-f uri]}]
   (if-let [element (get-element-f loader-id)]
           (let [background-uri (css/url uri)
-                tag-name       (dom/element->tag-name element)]
-               (case tag-name "img" (dom/set-image-source!        element                               uri)
-                                    (dom/set-element-style-value! element "background-image" background-uri)))))
+                tag-name       (dom/get-element-tag-name element)]
+               (case tag-name "img" (dom/set-image-source!               element                               uri)
+                                    (dom/set-element-inline-style-value! element "background-image" background-uri)))))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
