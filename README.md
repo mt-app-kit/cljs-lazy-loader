@@ -16,10 +16,10 @@ The <strong>cljs-lazy-loader</strong> is a simple lazy loader for Clojure projec
 
 Check out the latest commit on the [release branch](https://github.com/mt-app-kit/cljs-lazy-loader/tree/release).
 
-### Documentation
-
-The <strong>cljs-lazy-loader</strong> functional documentation is [available here](https://mt-app-kit.github.io/cljs-lazy-loader).
-
 ### Changelog
 
 You can track the changes of the <strong>cljs-lazy-loader</strong> library [here](CHANGES.md).
+
+# Documentation
+
+The <strong>cljs-lazy-loader</strong> functional documentation is [available here](https://mt-app-kit.github.io/cljs-lazy-loader).
