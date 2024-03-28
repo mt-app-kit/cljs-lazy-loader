@@ -1,9 +1,11 @@
 
 {:paths ["source-code/cljs"]
  :deps  {mt-app-kit/cljs-intersection-observer {:git/url "https://github.com/mt-app-kit/cljs-intersection-observer"
-                                                :sha     "0cb057880a16550b199c4f5a1b2ae6671dd66f83"}
+                                                :sha     "ecc3e87a1bb5b2d6dbeb32b287f264714a142f5b"}
          bithandshake/cljc-fruits              {:git/url "https://github.com/bithandshake/cljc-fruits"
                                                 :sha     "108070d0bb8d85f3682e04956a2066a3162afbd7"}
+         mt-app-kit/cljc-common-state          {:git/url "https://github.com/mt-app-kit/cljc-common-state"
+                                                :sha     "73c1d92ee628a63b93c78324a6762453ec699b16"}
          mt-utilities/cljs-dom                 {:git/url "https://github.com/mt-utilities/cljs-dom"
                                                 :sha     "ddb06748fada48e997a3d57f7d771160078cf3b9"}
          org.clojure/clojurescript             {:mvn/version "1.10.891"}

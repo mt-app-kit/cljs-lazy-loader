@@ -1,10 +1,10 @@
 
 (ns lazy-loader.env
-    (:require [lazy-loader.state :as state]))
+    (:require [common-state.api :as common-state]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
- 
+
 (defn image-load-failed?
   ; @description
   ; Returns TRUE if the given URI is already loaded but failed.
@@ -20,7 +20,7 @@
   ;
   ; @return (boolean)
   [_ {:keys [uri]}]
-  (if uri (get-in @state/URIS [uri :load-failed?])))
+  (if uri (common-state/get-state :lazy-loader :uris uri :load-failed?)))
 
 (defn image-loaded?
   ; @description
@@ -37,4 +37,4 @@
   ;
   ; @return (boolean)
   [_ {:keys [uri]}]
-  (if uri (get-in @state/URIS [uri :loaded?])))
+  (if uri (common-state/get-state :lazy-loader :uris uri :loaded?)))

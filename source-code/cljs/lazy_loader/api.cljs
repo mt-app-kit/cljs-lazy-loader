@@ -2,7 +2,6 @@
 (ns lazy-loader.api
     (:require [lazy-loader.env          :as env]
               [lazy-loader.side-effects :as side-effects]
-              [lazy-loader.state        :as state]
               [lazy-loader.views        :as views]))
 
 ;; ----------------------------------------------------------------------------
@@ -34,9 +33,6 @@
 
 ; @redirect (lazy-loader.side-effects/*)
 (def load-image! side-effects/load-image!)
-
-; @redirect (lazy-loader.state/*)
-(def URIS state/URIS)
 
 ; @redirect (lazy-loader.views/*)
 (def image-sensor views/image-sensor)
