@@ -4,7 +4,7 @@
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
-
+ 
 (defn image-load-failed?
   ; @description
   ; Returns TRUE if the given URI is already loaded but failed.
