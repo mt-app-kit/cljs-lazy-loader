@@ -1,7 +1,7 @@
 
 {:paths ["source-code/cljs"]
  :deps  {mt-app-kit/cljs-intersection-observer {:git/url "https://github.com/mt-app-kit/cljs-intersection-observer"
-                                                :sha     "1829ebfacdebd386c47616e56cd4a5d43b601103"}
+                                                :sha     "fbed6ce3c18930de7e9c05685082cbe674d72327"}
          bithandshake/cljc-fruits              {:git/url "https://github.com/bithandshake/cljc-fruits"
                                                 :sha     "fcd4ebfed6cc44486464b5d619bef88d620c7f6a"}
          mt-utilities/cljs-dom                 {:git/url "https://github.com/mt-utilities/cljs-dom"
